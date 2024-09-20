@@ -1,4 +1,4 @@
-package com.auth.user_management;
+package com.auth.user_management.Auth.Entity;
 
 import java.util.Collection;
 import java.util.Date;
@@ -35,6 +35,9 @@ public class CustomUser implements UserDetails {
     @Column(nullable = false)
     private String password;
 
+    @Column(nullable = false)
+    private String role;
+
     @CreationTimestamp
     @Column(updatable = false, name = "created_at")
     private Date createdAt;
@@ -45,7 +48,7 @@ public class CustomUser implements UserDetails {
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return List.of();
+        return List.of(() -> role);
     }
 
    public String getPassword() {

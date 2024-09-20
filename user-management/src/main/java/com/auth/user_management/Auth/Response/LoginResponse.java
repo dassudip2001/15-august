@@ -1,4 +1,4 @@
-package com.auth.user_management;
+package com.auth.user_management.Auth.Response;
 
 import lombok.Getter;
 import lombok.Setter;

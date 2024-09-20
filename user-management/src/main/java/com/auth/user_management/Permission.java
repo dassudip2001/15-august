@@ -22,6 +22,6 @@ public class Permission {
 
     private String display_name;
 
-    @ManyToMany(mappedBy = "permissions")
-    private Set<Role> roles;
+    // @ManyToMany(mappedBy = "permissions")
+    // private Set<Role> roles;
 }

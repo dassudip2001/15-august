@@ -25,10 +25,10 @@ public class Role {
 
     private String display_name;
 
-    @ManyToMany(fetch = FetchType.EAGER)
-    @JoinTable(name = "role_permissions"
-            , joinColumns = @JoinColumn(name = "role_id")
-            , inverseJoinColumns = @JoinColumn(name = "permission_id"))
+    // @ManyToMany(fetch = FetchType.EAGER)
+    // @JoinTable(name = "role_permissions"
+    //         , joinColumns = @JoinColumn(name = "role_id")
+    //         , inverseJoinColumns = @JoinColumn(name = "permission_id"))
 
-    private Set<Permission> permissions;
+    // private Set<Permission> permissions;
 }

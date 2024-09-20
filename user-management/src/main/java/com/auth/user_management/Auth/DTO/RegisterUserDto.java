@@ -1,4 +1,4 @@
-package com.auth.user_management;
+package com.auth.user_management.Auth.DTO;
 
 public class RegisterUserDto {
 private String email;
@@ -6,6 +6,8 @@ private String email;
     private String password;
     
     private String fullName;
+
+    private String role;
 
     public String getEmail() {
         return email;
@@ -29,5 +31,13 @@ private String email;
 
     public void setFullName(String fullName) {
         this.fullName = fullName;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
     }
 }

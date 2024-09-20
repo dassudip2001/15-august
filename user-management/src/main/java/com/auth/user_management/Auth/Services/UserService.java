@@ -1,6 +1,9 @@
-package com.auth.user_management;
+package com.auth.user_management.Auth.Services;
 
 import org.springframework.stereotype.Service;
+
+import com.auth.user_management.Auth.Entity.CustomUser;
+import com.auth.user_management.Auth.Repository.UserRepository;
 
 import java.util.ArrayList;
 import java.util.List;

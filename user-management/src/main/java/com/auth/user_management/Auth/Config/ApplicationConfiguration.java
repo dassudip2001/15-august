@@ -1,4 +1,4 @@
-package com.auth.user_management;
+package com.auth.user_management.Auth.Config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -9,6 +9,8 @@ import org.springframework.security.config.annotation.authentication.configurati
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+
+import com.auth.user_management.Auth.Repository.UserRepository;
 
 @Configuration
 public class ApplicationConfiguration {

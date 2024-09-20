@@ -1,4 +1,4 @@
-package com.auth.user_management;
+package com.auth.user_management.Auth.DTO;
 
 public class LoginUserDto {
 private String email;

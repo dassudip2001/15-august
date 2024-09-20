@@ -1,10 +1,17 @@
-package com.auth.user_management;
+package com.auth.user_management.Auth.Controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.auth.user_management.Auth.DTO.LoginUserDto;
+import com.auth.user_management.Auth.DTO.RegisterUserDto;
+import com.auth.user_management.Auth.Entity.CustomUser;
+import com.auth.user_management.Auth.JWT.JwtService;
+import com.auth.user_management.Auth.Response.LoginResponse;
+import com.auth.user_management.Auth.Services.AuthenticationService;
 
 @RequestMapping("/auth")
 @RestController

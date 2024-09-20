@@ -1,4 +1,4 @@
-package com.auth.user_management;
+package com.auth.user_management.Auth.JWT;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

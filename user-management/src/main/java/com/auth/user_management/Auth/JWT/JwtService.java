@@ -1,4 +1,4 @@
-package com.auth.user_management;
+package com.auth.user_management.Auth.JWT;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
